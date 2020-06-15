@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(136, 136, 211);
+            color: blanchedalmond;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div> <!-- Ao invés de ID pode ser Name-->
+    <p>Apendendo a usar <strong>DOM</strong> em JavaScript</p>
+
+    <script>
+        //window.document.write("Olá, Mundo!")
+       // window.document.write(window.document.URL) Exemplos de dom
+       //var corpo = window.document.body // body
+       var p1 = window.document.getElementsByTagName('p')[0]//Como há 2 ps é necessário utilizar [] seguido de num, neste caso 0, pois é o primeiro
+       window.document.write("Está escrito assim " + p1.innerText)//innerText = texto que está dentro do paragrafo
+       //corpo.style.background = 'black'// mudança de cor
+       p1.style.color = "blue"// Ex de como mudar a cor da fonte no JS
+       //var d = window.document.getElementById('msg')// pode ser name ao inves de ID. Segue a mesma ordem
+      // d.style.background = 'green' // Mudar a cor]
+      // d.innerText = "estou aguardando"  ou  window.document.getElementById('msg').innerText = 'estou aguardando'
+      //var d = window.document.querySelector('div#msg') Nova forma de ffazer
+      //d.style.background = 'blue'
+
+
+     
+    </script>
+</body>
+</html>

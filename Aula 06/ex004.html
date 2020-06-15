@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex004</title>
+    
+    <style>
+        body{
+            font: normal 20 pt;
+
+
+        }
+    </style>
+<body>
+
+    <script>
+        var nome = window.prompt("Qual é o seu nome? ")
+        document.write(`<h2>Olá, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.</h2><br/>`)//Escreve na tela. Também pode conter tags html ex: <h2> texto </h2>
+        document.write(`Seu nome em maiusculas é ${nome.toUpperCase()}<br/>`)//document.writeln - pula a linha. <br> break row - quebra pra linha debaixo
+        document.write(`Seu nome em minuscula é ${nome.toLowerCase()}`)
+        
+    </script>
+    
+</body>
+</html>
